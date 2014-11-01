@@ -15,7 +15,7 @@ namespace Sized
 
 
 namespace Fin
-  ||| Proof that a finite nat `f : Fin n` is lt its bound `n`
+  ||| Proof that a finite nat `f : Fin n` is less than its bound `n`
   finLtNat : (f : Fin n) -> lt (finToNat f) n = True
   finLtNat FZ = Refl
   finLtNat (FS x) = finLtNat x
